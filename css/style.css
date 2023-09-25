@@ -1,540 +1,42 @@
-
-.video{
-    width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
-video{
-    position: absolute;
-    top:0;
-    width: 100%;
-    height: 71.8ch;
-    object-fit: fill;
+.signIn{
+    background-color:#b8e9e0;
 }
-.div-thunder{
-    width: 100%;
-}
-.div-thunder .thunder{
-    position: absolute;
-    top:0;
-    width: 100%;
-    height: 71.8ch;
-    object-fit: fill;  
-    z-index: 111;
-}
-
-.position{
-    position: absolute;
-    top:0;
-}
-.position .row{
-    position:relative;
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
-    z-index: 111;
- }
- .position .row .texts h2{
-    position: absolute;
-    font-weight: 900;
-    color: black;
-    -webkit-background-clip: text;
-    font-size: 40px;
-    top: 100;
-    left: 150px;
- }
- .position .row .text-signIn{
-    font-weight: 900;
-    color: black;
-    font-size:35px;
-    text-shadow:1px 1px 4px #fa52af;
-    position: absolute;
-    top:500;
-    right:150;
- }
- .position .row .text-signUp{
-    color:transparent;
-    font-weight: 900;
-    color: black;
-    font-size:35px;
-    text-shadow:1px 1px 4px #fa52af;
-    -webkit-background-clip:text;
-    position: absolute;
-    top:500px;
- }
-
-@media screen and(max-width:500px){
-    .position .row{
-        position:relative;
-        width: 100%;
-        height: 100%;
-        z-index: 111;
-     }
-     .position .row .texts h2{
-        position: absolute;
-        font-weight: 900;
-        color: black;
-        -webkit-background-clip: text;
-        font-size: 40px;
-        top: 50;
-        right:0px;
-     }
-.position .row .text-signIn{
-    font-weight: 900;
-    color: black;
-    font-size:40px;
-    text-shadow:1px 1px 4px #fa52af;
-    position: absolute;
-    top:300;
-    right:0;
- }
- .position .row .text-signUp{
-    color:transparent;
-    font-weight: 900;
-    color: black;
-    font-size: 20px;
-    text-shadow:1px 1px 4px #fa52af;
-    -webkit-background-clip:text;
-    position: absolute;
-    top:50px;
-    right:150px;
- }
-}
-
-@media screen and (min-width:500px) and (max-width:570px) {
-  
-    .position .row{
-        position:relative;
-        width: 100%;
-        height: 100%;
-        background-color: aqua;
-        z-index: 111;
-     }
-     .position .row .texts h2{
-        position: absolute;
-        font-weight: 900;
-        color: black;
-        -webkit-background-clip: text;
-        font-size: 25px;
-        right:80px;
-        top: 150px;
-     }
-.position .row .text-signIn{
-    font-weight: 900;
-    color: black;
-    font-size: 20px;
-    text-shadow:1px 1px 4px #fa52af;
-    position: absolute;
-    top:500;
-    right:25;
- }
- .position .row .text-signUp{
-    color:transparent;
-    font-weight: 900;
-    color: black;
-    font-size: 20px;
-    text-shadow:1px 1px 4px #fa52af;
-    -webkit-background-clip:text;
-    position: absolute;
-    top:550px;
-    right:25px;
- }
-}
-
-@media screen and (min-width:571px) and (max-width:672px) {
-  
-    .position .row{
-        position:relative;
-        width: 100%;
-        height: 100%;
-        background-color: aqua;
-        z-index: 111;
-     }
-     .position .row .texts h2{
-        position: absolute;
-        font-weight: 900;
-        color: black;
-        -webkit-background-clip: text;
-        font-size: 35px;
-        top:50px;
-        right:75px;
-     }
-.position .row .text-signIn{
-    font-weight: 900;
-    color: black;
-    font-size: 25px;
-    text-shadow:1px 1px 4px #fa52af;
-    position: absolute;
-    top:550px;
-    right:75px;
- }
- .position .row .text-signUp{
-    color:transparent;
-    font-weight: 900;
-    color: black;
-    font-size: 20px;
-    text-shadow:1px 1px 4px #fa52af;
-    -webkit-background-clip:text;
-    position: absolute;
-    top:500px;
-    right:75px;
- }
-}
-@media screen and (min-width:673px) and (max-width:800px) {
-  
-    .position .row{
-        position:relative;
-        width: 100%;
-        height: 100%;
-        background-color: aqua;
-        z-index: 111;
-     }
-     .position .row .texts h2{
-        position: absolute;
-        font-weight: 900;
-        color: black;
-        -webkit-background-clip: text;
-        font-size: 40px;
-        top:50px;
-        right:0px;
-     }
-.position .row .text-signIn{
-    font-weight: 900;
-    color: black;
-    font-size: 25px;
-    text-shadow:1px 1px 4px #fa52af;
-    position: absolute;
-    top:550px;
-    right:75px;
- }
- .position .row .text-signUp{
-    color:transparent;
-    font-weight: 900;
-    color: black;
-    font-size: 20px;
-    text-shadow:1px 1px 4px #fa52af;
-    -webkit-background-clip:text;
-    position: absolute;
-    top:500px;
-    right:75px;
- }
-}
-@media screen and (min-width:800px) and (max-width:1100px) {
-  
-    .position .row{
-        position:relative;
-        width: 100%;
-        height: 100%;
-        background-color: aqua;
-        z-index: 111;
-     }
-     .position .row .texts h2{
-        position: absolute;
-        font-weight: 900;
-        color: black;
-        -webkit-background-clip: text;
-        font-size: 45px;
-        top:50px;
-        left:100px;
-     }
-.position .row .text-signIn{
-    font-weight: 900;
-    color: black;
-    font-size: 30px;
-    text-shadow:1px 1px 4px #fa52af;
-    position: absolute;
-    top:550px;
-    right:100px;
- }
- .position .row .text-signUp{
-    color:transparent;
-    font-weight: 900;
-    color: black;
-    font-size: 30px;
-    text-shadow:1px 1px 4px #fa52af;
-    -webkit-background-clip:text;
-    position: absolute;
-    top:500px;
-    right:100px;
- }
-}
-
-.video-6{
-    position: absolute;
-    top:0;
-    width: 100%;
-    height: 71.8ch;
-    object-fit: fill;
-    z-index: 9999;
-
-   }
-.d-video-6{
-    width: 100%;
-    display:none;
-}
-.d-video-5{
-    width: 100%;
-    display:none;
-}
-.video-5{
-    position: absolute;
-    top:0;
-    width: 100%;
-    height: 71.8ch;
-    object-fit: fill;
-    z-index: 999;
-
-
-   }  
-
-
-   .signIn-night .Absolute{
-    width: 100%;
-}
-.signIn-night .row{
-    position:absolute;
-    width:100%;
-    top:0;
-}
-.signIn-night .row .navbar{
-    background-color: #0000006b;
-    margin-left: 23px;
-    height:60px;
-}
-.signIn-night .row .navbar .container-fluid .navbar-brand{
-    color:#c4c6e0;
-    font-weight: 900;
-}
-.signIn-night .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signUp { 
-    font-weight: 500;
-    color:#c4c6e0;
-}
-.signIn-night .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signIn{
-    font-weight: 500;
-    color:#c4c6e0;
-}
-.signIn-night .row .navbar .container-fluid .navbar-toggler .navbar-toggler-icon{
-    background-image: url(../imges/moon\(7\).png);
-}
-.nav-img-moon-night{
-    margin-top: 15px;
-}
-
-.signIn-night .row .inputs-content-night{
-    width: 80%;
-    background-color: #0000006b;
-    text-align: center;
-    padding-bottom: 25px;
-}
-.signIn-night .row .inputs-content-night input{
-    width: 85%;
-    padding:10px;
-    background-color: transparent;
-    font-weight: 400;
-    outline:none;
-    border:2px solid;
-    border-color:#d582a7 #bec3e3;
-    border-radius:5px;
-    color: #c4c6e0;
-}
-.signIn-night .row .inputs-content-night .input-email-night{
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-.signIn-night .row .inputs-content-night .input-password-night{
-    margin-bottom: 50px;
-}
-.signIn-night .row .inputs-content-night .input-email-night:hover ,.input-password-night:hover{
-    background:linear-gradient(20deg,#d582a7,#bec3e3);
-}
-.signIn-night .row .inputs-content-night input::placeholder{
-    color:transparent;
-    background-image:linear-gradient(#d582a7,#bec3e3);
-    -webkit-background-clip:text;
-}
-.signIn-night .row .inputs-content-night .icons-moon-and-sun-night img{
-       margin-left: 10px;
-       width: 35px;   
-}   
-.signIn-night .row .inputs-content-night h3{
-    margin: auto;
-    width: 100px;
-    margin-top: 40px;
-    font-weight: 900;
-    color: transparent;
-    background-image:linear-gradient(#d582a7,#bec3e3);
-    -webkit-background-clip:text;
-}
-.signIn-night .row .inputs-content-night button{
-    font-size:20px;
-    width:85%;
-    padding:10px;
-    font-weight:600;
-    background-color: transparent;
-    font-weight:700;
-    transition:0.5s;
-    border:2px solid;
-    border-radius: 10px;
-    border-color:#d582a7 #bec3e3;
-    color:transparent;
-    background-image:linear-gradient(25deg,#d582a7,#bec3e3);
-    -webkit-background-clip:text;
-    margin-top: 50px;
-    
-}
-
-
-.signIn-night .row .inputs-content-night button:hover{
-    background:linear-gradient(20deg,#d582a7d8,#bec3e3dc);
-    color:#bec3e3;
-    font-weight: 700;
-}
-.signIn-night .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signUp:hover{
-    font-weight: 900;
-    color:#bec3e3;
-}
-.signIn-night .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signIn:hover{
-    color:#bec3e3;
-    font-weight:900;
-}
-
-
-.signIn-green .Absolute{
-    width: 100%;
-}
-.signIn-green .row{
-    position:absolute;
-    width:100%;
-    top:0;
-}
-.signIn-green .row .navbar{
-    background:linear-gradient(70deg,#1d1a1a93,#36ffbc80);
-    margin-left: 24px;
+.signIn .navbar{ 
+    background-color: #80AAFF;
     height: 60px;
 }
-.signIn-green .row .navbar .container-fluid .navbar-brand{
-    color:#cafce4;
+.signIn .navbar .container-fluid .navbar-brand{
     font-weight: 900;
+    color:#b8e9e0;
 }
-.signIn-green .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signUp { 
-    color:#cafce4 ;
+.signIn .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signUp { 
     font-weight: 500;
+    color:#b8e9e0;
+    transition: all 1s;
 }
-.signIn-green .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signIn{
+.nav-logIn{ 
     font-weight: 500;
-    color:#cafce4 ;
+    color:#b8e9e0;
+    transition: all 1s;
 }
-.signIn-green .row .navbar .container-fluid .navbar-toggler .navbar-toggler-icon{
-    background-image: url(../imges/moon\(16\).png);
-}
-.signIn-green .row .inputs-content-green{
-    width: 80%;
-    text-align: center;
-    padding-bottom: 25px;
-    background-color:#1d1a1a93;
-   background:linear-gradient(45deg,#36ffbc80,#1d1a1a93);
-}
-.signIn-green .row .inputs-content-green input{
-    width: 85%;
-    padding:10px;
-    background-color: transparent;
-    font-weight: 400;
-    outline:none;
-    border-color:#8effe3 #bee0e3;
-    color:#8af7bb;
-    border-radius:5px;
-}
-.signIn-green .row .inputs-content-green .input-email-green{
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-.signIn-green .row .inputs-content-green .input-password-green{
-    margin-bottom: 50px;
-}
-.signIn-green .row .inputs-content-green .input-password-green:hover ,.input-email-green:hover{
-    background:linear-gradient(20deg,#36ffd39a,#a7fff096);
-}
-.signIn-green .row .inputs-content-green input::placeholder{
-    color:transparent;
-    background-image:linear-gradient(20deg,#07ffb5,rgb(160, 255, 231));
-    -webkit-background-clip:text;
-}
-.signIn-green .row .inputs-content-green .icons-moon-and-sun-green img{
-       margin-left: 10px;
-       width: 35px;   
-}   
-.signIn-green .row .inputs-content-green h3{
-    margin: auto;
-    width: 100px;
-    margin-top: 40px;
-    font-weight: 900;
-    color: transparent;
-    background-image:linear-gradient(#6fffcf,rgb(128, 245, 200));
-    -webkit-background-clip:text;
-}
-.signIn-green .row .inputs-content-green button{
-    font-size:20px;
-    width:85%;
-    padding:10px;
-    font-weight:600;
-    background-color: transparent;
-    font-weight:700;
-    transition:0.5s;
-    border:2px solid;
-    border-radius: 10px;
-    border-color:#8effe3 #bee0e3;
-    color:transparent;
-    color:#46d6a3;
-    margin-top: 50px;
-    
-}
-.signIn-green .row .inputs-content-green button:hover{
-    background:linear-gradient(20deg,#36ffd39a,#a7fff096);
-    color:#2cda97;
-    font-weight: 700;
-}
-.signIn-green .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signUp:hover{
-    font-weight: 900;
-    color:#cafce4;
-}
-.signIn-green .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signIn:hover{
-    font-weight: 900;
-    color:#cafce4;
-} 
-.signIn .Absolute{
-    width: 100%;
-}
-.signIn .row{
-    position:absolute;
-    width:100%;
-    top:0;
-}
-.signIn .row .navbar{
-    background-color: #66ccffb0;
-    margin-left: 23px;
-    height: 60px;
-}
-.signIn .row .navbar .container-fluid .navbar-brand{
-    font-weight: 900;
-    color: #2e2aff;
-}
-.signIn .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signUp { 
-    font-weight: 500;
-    color:#2e2aff;
-}
-.signIn .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signIn{
-    font-weight: 500;
-    color:#2e2aff;
-}
-.signIn .row .navbar .container-fluid .navbar-toggler .navbar-togglers {
+.signIn .navbar .container-fluid .navbar-toggler .navbar-toggler {
     background-image: url(../imges/moon.png);
 }
-.signIn .row .navbar .container-fluid .navbar-toggler .navbar-toggler-icon{
-    background-image: url(../imges/moon.png);
+.signIn .navbar .container-fluid .navbar-toggler .navbar-toggler-icon{
+    background-image: url(../imges/moon\(2\).png);
 }
 .signIn .row .inputs-content{
     width: 80%;
     background-color: #19b2ff93;
     text-align: center;
     padding-bottom: 25px;
+    flex-wrap:wrap;
+   background-color:rgb(205, 238, 255)
 }
 .signIn .row .inputs-content input{
     width: 85%;
@@ -543,9 +45,9 @@ video{
     font-weight: 400;
     outline:none;
     border:2px solid;
-    border:2px solid #2e2aff;
+    border:2px solid #80AAFF;
     border-radius:5px;
-    color:#2e2aff;
+    color:#80AAFF;
 }
 .signIn .row .inputs-content .input-email{
     margin-top: 30px;
@@ -555,19 +57,18 @@ video{
     margin-bottom: 50px;
 }
 .signIn .row .inputs-content .input-password:hover ,.input-email:hover{
-   background:linear-gradient(20deg,#00ccff9a,#02adfc96);
+    background:linear-gradient(20deg,#6ee1fd9a,#80AAFF);
 }
 .signIn .row .inputs-content button:hover{
-    background:linear-gradient(20deg,#00ccff9a,#02adfc96);
-    color:#2c4cda;
+    color:#b8e9e0;
+    background:linear-gradient(20deg,#6ee1fd9a,#80AAFF);
     font-weight: 700;
 }
 .signIn .row .inputs-content input::placeholder{
     color:transparent;
     color: transparent;
-    background-image:linear-gradient(#62abff,#66ccff);
-
-    -webkit-background-clip:text;
+    background-image:linear-gradient(#285180,#1da7ec);
+   -webkit-background-clip:text;
 }
 .signIn .row .inputs-content .icons-moon-and-sun img{
        margin-left: 10px;
@@ -592,7 +93,7 @@ video{
     transition:0.5s;
     border:2px solid;
     border-radius: 10px;
-    border:2px solid #2e2aff;
+    border:2px solid #80AAFF;
     color:transparent;
     color: #66ccff;
     -webkit-background-clip:text;
@@ -600,310 +101,16 @@ video{
     
 }
 
-.signIn .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signUp:hover{
+.signIn .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signUp:hover{
     font-weight: 900;
-    color:hsl(241, 100%, 58%);;
+    color:#b8e9e0;
 
 }
-.signIn .row .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signIn:hover{
-    font-weight:900;
-    color:hsl(241, 100%, 58%);;
-
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-video{
-    width: 1000px;
-}
-
-
-source{
-    height: 300px;
-}
-
-
-
-
-
-
-h3{
-    color:#2e2aff;
+.nav-logIn:hover{
     font-weight: 900;
-    text-shadow: 2px 2px #000;
-    margin-top: 50px;
-    text-shadow: 1px 1px #050404;
-
+    color:#b8e9e0;
 
 }
 
 
-
-.btn-cloud-signUp{
-    font-size: 200;
-    color:rgb(12, 33, 99);
-    position:absolute;
-    top:50px;
-    left: 125px;
-    z-index: 99;
-    text-align: center;
-    background-image: url(../imges/cloudy\ \(4\).png);
-    height: 200;
-    width: 200;
-    background-size: 100% 100%;
-    flex-wrap:wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-} 
-
-.btn-cloud-signUp2{
-    font-size: 200;
-    color:rgb(12, 33, 99);
-    position:absolute;
-    top:50px;
-    left: 425px;
-    z-index: 99;
-    text-align: center;
-    background-image: url(../imges/cloudy\ \(4\).png);
-    height: 200;
-    width: 200;
-    background-size: 100% 100%;
-    flex-wrap:wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-} 
-
-.
-
-
-/*
-    body{
-        height: 100%;
-        background-image: url(../istockphoto-1415642842-612x612.jpg);
-        background-size: cover; 
-    }   
-/*
-.My-Cloud .btn-My-Cloud{
-    text-align: center;
-    margin-top: 140px;
-    font-weight: 900;
-    color:#003399;
-    font-size: 45px;
-    text-shadow: 5px 5px 25px #66adf0;
-    border: 7 solid #fff;
-    background-color: transparent;
-    border: 0;
-}
-.btn-cloud-login{
-    width: 200px;
-    color:rgb(12, 33, 99);
-    position:absolute;
-    left:525px;
-    top: 250px;
-    background-image: url(../imges/cloudy\ \(7\).png);
-    height: 200;
-    background-size: 100% 100%;
-    flex-wrap:wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    
-} 
-.icon-cloud1:hover{
-color: #f9fdfd;
-}
-.btn-cloud-signUp{
-    font-size: 200;
-    color:rgb(12, 33, 99);
-    position:absolute;
-    right:525;
-    top:275px;
-    z-index: 99;
-    text-align: center;
-    background-image: url(../imges/cloudy\ \(6\).png);
-    height: 200;
-    width: 200;
-    background-size: 100% 100%;
-    flex-wrap:wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-} 
-h3{
-    color:#003399;
-    font-weight: 900;
-    text-shadow: 2px 2px #000;
-    margin-top: 50px;
-    text-shadow: 1px 1px #050404;
-
-
-}
-h6:hover{
-    color:rgb(12, 54, 134);
-
-}
-
-@media screen and (max-width:540px) {
-
-    body{
-       height:100%;
-       background-image: url(../istockphoto-1415642842-612x612.jpg);
-       background-size: cover; 
-    }
-    .My-Cloud{
-        height: 150px;
-        width: 150px;
-        align-items: center;
-        margin-top: 110px; 
-        margin-left: 20px;
-    }
-    .My-Cloud .btn-My-Cloud
-{
-    text-align: center;
-    margin-top: 5px;
-    font-weight: 900;
-    color:#003399;
-    font-size: 25px;
-    text-shadow: 5px 5px 25px #66adf0;
-    border: 7 solid #fff;
-    background-color: transparent;
-    border: 0;
-}
-    }
-
-@media screen  and (min-width:541px) and (max-width:768px){
-        body{
-           height:100%;
-           background-image: url(../istockphoto-1415642842-612x612.jpg);
-           background-size: cover; 
-        }
-        .My-Cloud{
-            height: 175px;
-            width: 175px;
-            align-items: center;
-            margin-top: 125px; 
-            margin-left: 25px;
-        }
-        .My-Cloud .btn-My-Cloud
-    {
-        text-align: center;
-        margin-top: 20px;
-        font-weight: 900;
-        color:#003399;
-        font-size: 27px;
-        text-shadow: 5px 5px 25px #66adf0;
-        border: 7 solid #fff;
-        background-color: transparent;
-        border: 0;
-        background-color:aqua;
-    }
-        }
-    
-   
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.My-cloud{
-   
-    
-    height: 100%;
-    background-image: url(../istockphoto-1415642842-612x612.jpg);
-    background-size: 100% 110%;
-
-
-   
-}
-.icon-cloud-signin{
-    font-size: 175px;
-    color:rgb(12, 33, 99);
-    position: relative;
-    left:0;
-} 
-i{
-
- border:5px solid #fff;
-}
-
-icon-cloud-login{
-    font-size: 175px;
-    color: #b39f9fc7;
-    position: relative;
-    left:0;
-} 
-
-
-.div1
-{
-    height:180px;
-    width:180px;
-    background:linear-gradient(rgb(0, 185, 185),#0379af);  
-    transform: rotate(43deg);
-    
-
-}
-.div
-{
-    height:180px;
-    width:180px;
-    transform: rotate(48deg);
-    background:linear-gradient(#0379af,rgb(0, 185, 185));
-
-    right: 250px;
-    z-index: 2;
-}
-.d
-{
-    height:180px;
-    width: 180px;
-    background:linear-gradient(rgb(0, 185, 185),#0379af);
-
-    transform: rotate(69deg);
-    right: 250px;
-    z-index: 2;
-}
-.f{
-    font-size: 500px;
-    background-color: aqua;
-}
-.l
-{
-    height:180px;
-    width:180px;
-    background:linear-gradient(#0379af,rgb(0, 185, 185));
-    transform: rotate(40deg);
-    right: 250px;
-    z-index: 2;
-}
-h2{
-    transform:rotate(180deg);
-}
 

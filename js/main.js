@@ -1,21 +1,14 @@
-  $(".navbar-toggler").click(function(){
-      $(".nav-logIn").css({"color":"#80aaff"});
-      $(".nav-signUp").css({"color":"#80aaff"});
-  })
-  $(".nav-img-moon").click(function(){
-      $(".nav-logIn").css({"color":"#b8e9e0"});
-      $(".nav-signUp").css({"color":"#b8e9e0"});
-  })
-  $(".input-email").click(function(){
   
-    $(".input-email").css({"background":"#80AAFF"});
+  
+  $(".email").click(function(){
+    $(".email").css({"background":"#17272c"});
   })    
-  $(".input-password").click(function(){
-    $(".input-password").css({"background":"#80AAFF"});
+  $(".password").click(function(){
+    $(".password").css({"background":"#17272c"});
+
   })
-     
- 
-  
+
+
 
 
 

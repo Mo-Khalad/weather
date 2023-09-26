@@ -1,116 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+body{
+    background:linear-gradient(24deg,#0d181b 50%,#17272c 50%);
 }
-.signIn{
-    background-color:#b8e9e0;
+.navbar{
+    background-color:#0b1416 !important;
 }
-.signIn .navbar{ 
-    background-color: #80AAFF;
-    height: 60px;
-}
-.signIn .navbar .container-fluid .navbar-brand{
+.navbar-brand{
     font-weight: 900;
-    color:#b8e9e0;
 }
-.signIn .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signUp { 
-    font-weight: 500;
-    color:#b8e9e0;
-    transition: all 1s;
+.navbar-brand ,.nav-signIn ,.nav-signUp{
+  color:rgba(19, 131, 134, 0.884) !important;
 }
-.nav-logIn{ 
-    font-weight: 500;
-    color:#b8e9e0;
-    transition: all 1s;
+.nav-signIn ,.nav-signUp{
+ text-decoration: none;
+ padding:12px;
+ font-size: 17px;
+ transition: all 0.2s;
 }
-.signIn .navbar .container-fluid .navbar-toggler .navbar-toggler {
-    background-image: url(../imges/moon.png);
+.nav-signIn{
+    position:absolute;
+    z-index: 999;
+    left:200px;
+    top: 3px;
 }
-.signIn .navbar .container-fluid .navbar-toggler .navbar-toggler-icon{
-    background-image: url(../imges/moon\(2\).png);
+.nav-signIn:hover ,.nav-signUp:hover{
+    font-weight: 800;
+    }
+.row{
+    width: 40%;  
+    height: 70%; 
+    margin: auto;
 }
-.signIn .row .inputs-content{
-    width: 80%;
-    background-color: #19b2ff93;
-    text-align: center;
-    padding-bottom: 25px;
-    flex-wrap:wrap;
-   background-color:rgb(205, 238, 255)
+.inputs-contents{
+width:40%;
+height:90%;
+padding-top: 50px;
+border-radius: 5px;
+background:linear-gradient(24deg,#17272c 51%,#0d181b 52%);
+box-shadow: 0 0 4px rgba(19, 131, 134, 0.884);
 }
-.signIn .row .inputs-content input{
-    width: 85%;
-    padding:10px;
-    background-color: transparent;
-    font-weight: 400;
-    outline:none;
-    border:2px solid;
-    border:2px solid #80AAFF;
-    border-radius:5px;
-    color:#80AAFF;
+input,.btn-logIn{
+outline:transparent;
+width:85%;
+padding:10px;
+margin-top:10px;
+border:1px solid rgba(19, 131, 134, 0.884);
+box-shadow: 0 0 3px rgba(19, 131, 134, 0.884);
+background-color:#070d0f98;
+border-radius:5px;
+color:rgba(19, 131, 134, 0.884);
+font-size:13px; 
 }
-.signIn .row .inputs-content .input-email{
-    margin-top: 30px;
-    margin-bottom: 10px;
+input:hover ,.btn-logIn:hover{
+    background:linear-gradient(rgba(19, 130, 134, 0.712),rgba(16, 66, 68, 0.719));
 }
-.signIn .row .inputs-content .input-password{
+.btn-logIn:hover{
+    color:#0d181b;
+}
+.password{
     margin-bottom: 50px;
 }
-.signIn .row .inputs-content .input-password:hover ,.input-email:hover{
-    background:linear-gradient(20deg,#6ee1fd9a,#80AAFF);
-}
-.signIn .row .inputs-content button:hover{
-    color:#b8e9e0;
-    background:linear-gradient(20deg,#6ee1fd9a,#80AAFF);
-    font-weight: 700;
-}
-.signIn .row .inputs-content input::placeholder{
-    color:transparent;
-    color: transparent;
-    background-image:linear-gradient(#285180,#1da7ec);
-   -webkit-background-clip:text;
-}
-.signIn .row .inputs-content .icons-moon-and-sun img{
-       margin-left: 10px;
-       width: 35px;   
-}   
-.signIn .row .inputs-content h3{
-    margin: auto;
-    width: 100px;
+.btn-logIn{
     margin-top: 50px;
     font-weight: 900;
-    color: transparent;
-    background-image:linear-gradient(20deg,#0896dd,#00deee);
-    -webkit-background-clip:text;
+    font-size: 15px;   
 }
-.signIn .row .inputs-content button{
-    font-size:20px;
-    width:85%;
-    padding:10px;
-    font-weight:600;
-    background-color: transparent;
-    font-weight:700;
-    transition:0.5s;
-    border:2px solid;
-    border-radius: 10px;
-    border:2px solid #80AAFF;
-    color:transparent;
-    color: #66ccff;
-    -webkit-background-clip:text;
-    margin-top: 50px;
+::placeholder{
+    color:#17272c !important;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width:500px) and (max-width:999px)
+{
+    .nav-signIn
+    {
+        position:static;
+    }
+
+    .row{
+        width:80%;  
+        height:77%; 
+        margin: auto;
+    }
     
-}
+} 
+@media screen and (min-width:750px) and (max-width:999px)
+{
+    .nav-signIn
+    {
+        position:static;
+    }
 
-.signIn .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-signUp:hover{
-    font-weight: 900;
-    color:#b8e9e0;
+    .row{
+        width:60%;  
+        height:75%; 
+        margin: auto;
+    }
+    
+} 
+@media screen and (min-width:999px) and (max-width:1199px)
+{
+    .row{
+        width:50%;  
+        height:75%; 
+        margin: auto;
+    }
+    
+} 
+    
 
-}
-.nav-logIn:hover{
-    font-weight: 900;
-    color:#b8e9e0;
-
-}
-
-
+    
 

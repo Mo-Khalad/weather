@@ -1,61 +1,43 @@
 <html>
      <head>
         <link rel="stylesheet" href="css/all.min.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="body ">
 
-     </head>
-    <body class="body">
-      <div class="signIn">    
-    <nav class="col-12 navbar navbar-expand-lg ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">My-Cloud</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">My Could</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-signIn" href="#">signIn</a>
+              </li>
+                  <li class="nav-item">
+                  <a class="nav-signUp" href="#">signUp</a>
+                </li>
+              </ul>
+            
+           </div>
+         </div>
+       </nav>
+      
+       <div class="container mt-5">
+         <div class="row">
+            <div class="col-12 col-md-6 inputs-contents w-100 h-100 text-center">
+               <input class="email" type="email" name="email" placeholder="Enter Your email">
+               <input class="password" type="password" name="password" placeholder="password">
+               <button class="btn-logIn">Login</button>
+            </div>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
-          <li class="nav-item">
-            <a class="nav-link nav-logIn" href="#">signIn</a>
-          </li>              
-          <li class="nav-item">
-            <a class="nav-link nav-signUp" href="#">signUp</a>
-          </li>
-        
-      
-        </ul>
-        <form class="d-flex">
-         <img class="nav-img-moon" src="imges/moon(2).png" width="50" height="40px" alt="moon">   
-        </div>
-    </div>
-  </nav>
-           <div class="container">
-              <div class="row d-flex justify-content-center align-items-center">
-              
-               <div class="col-md-6">
-               <img src="imges/cloud(1).png" width="300px" >
-               </div>
-             
-               <div class="col-12 col-md-6  col-xl-6 mt-5  d-flex justify-content-center align-items-center">
-                <div class="inputs-content d-flex justify-content-center mb-5 align-items-center">
-                         <h3>signIn</h3>
-                         <input class="input-email" type="email" placeholder="Enter Your Email" name="password">
-                         <input class="input-password" type="password" placeholder="Password" name="password">
-                         <button>log in</button>
-      
+         </div>
 
-                         <div class="icons-moon-and-sun mt-5">
-                          <img class="btn-icon-moon"src="imges/moon.png" width="50" height="40px" alt="moon">
-                          <img class="btn-icon-sun" src="imges/sun.png" width="50" height="40px" alt="sun">                          
-                         </div>
-                    </div>
-      
-                 </div>
-          
-                 </div>
-                 </div>
-        </div>
+       </div>
+
        </body>
 
         <script src="js/bootstrap.bundle.min.js"></script>

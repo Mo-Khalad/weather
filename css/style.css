@@ -9,6 +9,7 @@ body{
 }
 .navbar-brand ,.nav-signIn ,.nav-signUp{
   color:rgba(19, 131, 134, 0.884) !important;
+  color: #c4ffe3 !important;
 }
 .nav-signIn ,.nav-signUp{
  text-decoration: none;
@@ -26,19 +27,22 @@ body{
     font-weight: 800;
     }
 .row{
-    width: 40%;  
-    height: 70%; 
-    margin: auto;
+    width: 100%;  
+    height: 70%;
+    justify-content: space-between; 
 }
 .inputs-contents{
-width:40%;
 height:90%;
 padding-top: 50px;
 border-radius: 5px;
 background:linear-gradient(24deg,#17272c 51%,#0d181b 52%);
 box-shadow: 0 0 4px rgba(19, 131, 134, 0.884);
 }
-input,.btn-logIn{
+.inputs-contents h3{
+    color: #FFF;
+    font-weight:800;
+}
+input,.btn-logIn ,.btn-Register{
 outline:transparent;
 width:85%;
 padding:10px;
@@ -50,24 +54,32 @@ border-radius:5px;
 color:rgba(19, 131, 134, 0.884);
 font-size:13px; 
 }
-input:hover ,.btn-logIn:hover{
-    background:linear-gradient(rgba(19, 130, 134, 0.712),rgba(16, 66, 68, 0.719));
+.btn-logIn{
+    background-color: #FFFFFF;
+    margin-top: 50px;
 }
-.btn-logIn:hover{
-    color:#0d181b;
+.btn-Register{
+    background-color:#c4ffe3;
 }
 .password{
     margin-bottom: 50px;
 }
-.btn-logIn{
-    margin-top: 50px;
+.btn-logIn ,.btn-Register{
     font-weight: 900;
-    font-size: 15px;   
+    font-size: 15px;  
 }
 ::placeholder{
     color:#17272c !important;
+    color: #a8bebb !important;
     font-weight: 500;
 }
+input:hover ,.btn-logIn:hover ,.btn-Register:hover{
+    background-color: #17272c !important;
+}
+.btn-logIn:hover .btn-Register:hover{
+    color:#e3f3ef;
+}
+
 
 
 @media screen and (min-width:500px) and (max-width:999px)

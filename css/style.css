@@ -1,0 +1,349 @@
+body{
+   background-color: #1a0818;
+   height: 100vh;
+}
+a{
+   text-decoration: none;
+}
+.text-Error{
+    width:400;
+    padding:20px;
+    box-shadow:1px 1px 6px rgb(1, 7, 19);
+    position:absolute;
+    border-radius: 10px;
+    background-color: #ddb8d3;
+    text-align: center;
+    right:25px;
+    top:150px;
+    color:#2a0828;
+    font-size:20px;
+    z-index:999999999;
+}
+#btn-text{
+    color:#200016;
+    list-style-type: none;
+    background-color:#ddd;
+    width: 40px;
+    padding-top:5px;
+    padding-bottom:5;
+    padding-left:13px;
+    padding-right:13px;
+    border-radius: 50%;
+}
+.navbar-toggler{
+    background-color: #ddd !important;
+    margin-right: 0.5rem !important;
+    box-shadow: none !important;
+}
+.error-Weather{
+    margin-top: 15px;
+}
+.signUp ,.signIn{
+    position: relative;
+}
+.main{
+    position: relative;
+    overflow: hidden;
+}
+.images{
+    position: absolute;
+    width:100%;
+    height:100vh;
+    object-fit:fill;
+    left:0;
+    bottom:0 !important;
+}
+#boat6{
+    z-index: 99;
+}
+.navbar{
+    background-color: transparent !important;
+    position:relative;
+    z-index: 99999;
+}
+.navbar-toggler{
+    position: absolute;
+    right:0 !important;
+    top:10px !important;
+}
+.navbar a{
+    color: #ddd !important;
+}
+.navbar-brand{
+    font-weight: 900 !important;
+}
+.btn-nav-signIn ,.btn-nav-signUp{
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.btn-nav-signIn ,.btn-nav-Weather{
+    position:absolute;
+    z-index: 999;
+    left:200px;
+    top:8px;
+}
+#btn-logOut{
+    margin-right:20px;
+    top:10px;
+    cursor: pointer;
+}
+.btn-nav-Weather{
+    left:75px;
+}
+.btn-nav-signIn:hover ,.btn-nav-signUp:hover ,.btn-nav-Weather:hover ,.btn-nav-Home:hover{
+    font-weight: 900;
+}
+#main-moon ,#moon{
+    mix-blend-mode: screen;
+    width:75%;
+    height:100%;
+    left: 125px;
+}
+.input-content{
+    position: relative;
+    z-index:9999;
+    width:35%;
+    height:500px;
+    border-radius:3%;
+    box-shadow:1px 1px 8px #251220;
+    background-color: #2a0828;  
+}
+.input-images{
+    position: absolute;
+    width:100%;
+    height:100vh !important;
+    object-fit:fill;
+    left:0;
+    bottom:0 !important;
+} 
+ #name ,#phone ,#email ,#password ,#rePassword ,#btn-logIn ,#btn-Register ,#btn-signUp ,#email-signUp ,#password-signUp{
+    position: absolute;
+    z-index: 9999;
+    outline:none;    
+    width: 95%;
+    padding:10px;
+    border-radius:10px;
+    margin:10px;
+    background-color: transparent;
+    border:0;
+}
+#name ,#phone ,#password-signUp ,#rePassword{
+    width:45% !important;
+}
+#phone{
+    right:0 !important;
+}
+#name ,#phone ,#email ,#password ,#rePassword ,#btn-signUp  ,#email-signUp ,#password-signUp{
+    box-shadow: 1px 1px 6px #0f040c;
+}
+#email{
+    top:90;
+}
+#password{
+    top:150px;
+}
+#email-signUp{
+    top:175;
+}
+#password-signUp{
+    top:250px;
+    left:0;
+}
+#rePassword{
+    top:250px;
+    right: 0;
+}
+input::placeholder ,.password ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password-signUp{
+    color: #ddb8d3 !important;
+}
+
+h3{
+    color: #ddd;
+    font-weight:900;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+#btn-Register ,#btn-logIn و#btn-signUp{
+    font-weight: 800;
+}
+#btn-Register{
+    bottom:5px;
+    background-color: #4b1149;
+    color: #ddd;
+}
+#btn-logIn{
+    bottom:75px;
+    background-color: #ddd;
+    color: #b45399;
+}
+#btn-signUp{
+    bottom:25px;
+    background-color: #ddd;
+    color: #b45399;
+}
+#password:hover ,#email:hover ,#name:hover ,#phone:hover ,#rePassword:hover ,#email-signUp:hover ,#password-signUp:hover{
+   background-color:#772d62d0 !important;    
+}
+#btn-login:hover ,#btn-Register:hover ,#btn-signUp:hover{
+    background: linear-gradient(20deg,#1f0735,#300221);
+    color: #ddd;
+}
+#main-moon ,#moon{
+    mix-blend-mode: screen;
+    width:90%;
+    height:100%;
+    top:50px;
+    left:75px;
+}
+.cloud{
+ font-size:20px; 
+ color: #ddd;
+ margin-top:-350px;  
+}
+.text h2{
+    color:#ce67b0;
+}
+.hi-prev ,.hi-next{
+    background-color: #b45399 !important;
+}
+.weathers{
+    display: flex;
+}
+.weather{
+    display: none;
+}
+.card{
+    background: linear-gradient(#200016,#10001f);
+    width: 90%;    
+    max-width: 470px;
+    color: #fff;
+    margin: auto ;
+    border-radius:20px;
+    padding: 40px 35px;
+    box-shadow: 1px 1px 6px #0a0707;
+}
+p{
+    color: #ddd;
+}
+.search input ,button{
+    border: 0;
+    outline: 0;
+    background:#ebfffc;
+    padding: 10px 25px;
+    height: 60px;
+}
+.search input{
+    border-radius:30px;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button{
+ border-radius: 50%;
+}
+.weather-icon{
+    width:170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size:45px;
+    font-weight:400;
+    margin-top:-10px;
+}
+.details{
+    margin-top:50px;
+    padding:0 20px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.humidity{
+    width:75px !important;
+    vertical-align: top;
+}
+
+@media screen and (min-width:500px) and (max-width:759px){
+    .btn-nav-signIn ,.btn-nav-Weather{
+        position:static;
+    }   
+    .input-content{
+        width:70%;
+        height:450px;
+
+    }
+ .cloud
+  {   
+     font-size:10px; 
+     color: #ddd;
+     margin-top:-250px;  
+  }   
+
+  #main-moon ,#moon{
+    mix-blend-mode: screen;
+    width:90%;
+    height:100%;
+    top:20px;
+    left:25px;
+}
+
+}
+@media screen and (min-width:750px) and (max-width:1099px){
+  .btn-nav-signIn ,.btn-nav-Weather{
+    position:static;
+}   
+   .input-content{
+    width: 50%;
+    height:450px;
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

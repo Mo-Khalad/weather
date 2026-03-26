@@ -37,6 +37,7 @@ a{
 }
 .error-Weather{
     margin-top: 15px;
+    font-weight: 600;
 }
 .signUp ,.signIn{
     position: relative;
@@ -224,7 +225,8 @@ h3{
     box-shadow: 1px 1px 6px #0a0707;
 }
 p{
-    color: #ddd;
+    color: #a5a3a3;
+    font-size: 14px;
 }
 .search input ,button{
     border: 0;
@@ -285,7 +287,6 @@ p{
     top:20px;
     left:25px;
 }
-
 }
 @media screen and (min-width:750px) and (max-width:1099px){
   .btn-nav-signIn ,.btn-nav-Weather{

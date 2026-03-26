@@ -15,7 +15,7 @@ var city=document.getElementById("city");
 var humidity=document.getElementById("humidity");
 var wind=document.getElementById("wind");
 var weatherIcon=document.getElementById("weatherIcon")
-var text=document.getElementById("text-Error");
+var textError=document.getElementById("text-Error");
 var btnText=document.getElementById("btn-text");
 var errorWeather=document.querySelector(".error-Weather");
 var stars1=document.getElementById("main-stars")
@@ -70,6 +70,9 @@ $("#email-signUp").click(function(){
 }) 
 $("#password-signUp").click(function(){
   $("#password-signUp").css({"background":"#772d62d0"});
+})
+$("#rePassword").click(function(){
+  $("#rePassword").css({"background":"#772d62d0"});
 })
 $("#name").click(function(){
   $("#name").css({"background":"#772d62d0"});
@@ -148,8 +151,11 @@ if((token!==null)){
     $(".weathers").hide();
     $(".btn-nav-Home").css({"font-weight":"900"})
     $(".btn-nav-Weather").css({"font-weight":"100"})
-    btnText.innerHTML= character?.data.user.email.charAt(0)
+ if(character!==null){
+   btnText.innerHTML= character
+}else btnText.innerHTML= character?.data.user.email.charAt(0)
 }
+
 else{
 $(".nav-Two").hide();
 $(".signIn").hide();
@@ -178,7 +184,6 @@ function clearSignUp(){
    inputs[i].style.background = "#2a0828"
   }
  }
-
  async function checkSignUp()
 {
   product={
@@ -202,7 +207,7 @@ if(response.data.message=="success"){
 } catch (error){
   $("#btn-signUp").attr("disabled" , false)
   $(".text-Error").show();
-  text.innerHTML= error?.response?.data.errors.msg ;
+  textError.innerHTML= error?.response?.data.errors.msg ;
   $(".text-Error").fadeOut(5000);
 } 
 }
@@ -211,7 +216,7 @@ btnSignUp.addEventListener("click",checkSignUp)
 async function checkLogin(){
  if(email.value ==='' || password.value ===""){
     $("#text-Error").show();
-    text.innerHTML="Make sure you enter all valid data";
+    textError.innerHTML="error in password Make sure you enter all valid data";
     $("#text-Error").fadeOut(5000);
 } 
 else{  
@@ -227,6 +232,8 @@ else{
 
   if(response.data.message==="success"){
     localStorage.setItem("success" , JSON.stringify(response.data.token))
+    localStorage.setItem("email" , JSON.stringify(email.value.charAt(0)))
+
     $(".signIn").hide();
     $(".My-could").hide();
     $(".signUp").hide();
@@ -249,19 +256,25 @@ else{
 btnLogIn.addEventListener("click",checkLogin)
 
 async function checkWeather(){
-  var response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputSearch.value}&appid=eb8e86b4eea9b5e3bb00f71d87e19d79&units=metric`)
-if(response.status==404) 
-{
+   var response =''
+   
+ response =await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputSearch.value}&appid=eb8e86b4eea9b5e3bb00f71d87e19d79&units=metric`)
+
+ if(inputSearch.value === ''){
+    $(".weather").css({"display":"none"})
+    $(".error-Weather").show();
+    errorWeather.innerHTML="Enter The City Name";
+}
+else if(response.status === 404 || response.status === undefined) {
   $(".weather").css({"display":"none"})
   $(".error-Weather").show();
-  errorWeather.innerHTML="city not found";
+  errorWeather.innerHTML="City Not Found";
 }
-else 
-{
+
+else {
   $(".weather").css({"display":"block"})
   $(".error-Weather").hide();
-}
- var data=await response.json();
+   var data=await response.json();
   city.innerHTML=data.name;
   humidity.innerHTML=data.main.humidity +"%";
   temp.innerHTML=Math.round(data.main.temp)+"C";
@@ -282,53 +295,12 @@ else
   else if(data.weather[0].main=="Rain"){
     weatherIcon.src="images/rain.png";
     weatherIcon.alt="rain";
-
   }
   else if(data.weather[0].main=="Snow"){
     weatherIcon.src="images/snow.png";
     weatherIcon.alt="snow";
   }
 }
+}
 
 btnSearch.addEventListener("click",checkWeather)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	

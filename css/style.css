@@ -5,6 +5,13 @@ body{
 a{
    text-decoration: none;
 }
+.nav-Two{
+    background-color: #4b1149 !important;
+    display: none;
+}
+.home-page{
+    display: none;
+}
 .text-Error{
     width:400;
     padding:20px;
@@ -14,10 +21,11 @@ a{
     background-color: #ddb8d3;
     text-align: center;
     right:25px;
-    top:150px;
+    top: 125;
     color:#2a0828;
     font-size:20px;
     z-index:999999999;
+    display: none;
 }
 #btn-text{
     color:#200016;
@@ -39,8 +47,12 @@ a{
     margin-top: 15px;
     font-weight: 600;
 }
-.signUp ,.signIn{
+.signUp-page ,.signIn-page{
     position: relative;
+    display: none;
+}
+.signIn-page{
+    top:40
 }
 .main{
     position: relative;
@@ -58,9 +70,10 @@ a{
     z-index: 99;
 }
 .navbar{
-    background-color: transparent !important;
+    background-color:#270526c7 !important;
     position:relative;
     z-index: 99999;
+    display: none;
 }
 .navbar-toggler{
     position: absolute;
@@ -108,6 +121,16 @@ a{
     border-radius:3%;
     box-shadow:1px 1px 8px #251220;
     background-color: #2a0828;  
+}
+.login-text{
+    position: absolute;
+    top: -75px;
+    left: 40%;
+    z-index: 99999;
+    font-size: 30px;
+}
+.My-could{
+    display: none;
 }
 .input-images{
     position: absolute;
@@ -157,7 +180,6 @@ a{
 input::placeholder ,.password ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password-signUp{
     color: #ddb8d3 !important;
 }
-
 h3{
     color: #ddd;
     font-weight:900;
@@ -208,8 +230,8 @@ h3{
 .hi-prev ,.hi-next{
     background-color: #b45399 !important;
 }
-.weathers{
-    display: flex;
+.weather-page{
+    display: none;
 }
 .weather{
     display: none;
@@ -223,6 +245,7 @@ h3{
     border-radius:20px;
     padding: 40px 35px;
     box-shadow: 1px 1px 6px #0a0707;
+    margin-top:40px !important;
 }
 p{
     color: #a5a3a3;
@@ -255,15 +278,94 @@ p{
 .details{
     margin-top:50px;
     padding:0 20px;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
 }
 .humidity{
     width:75px !important;
     vertical-align: top;
 }
-
+#btn-logOut{
+        font-size: 14px !important;
+        background-color: #ddd;
+        padding: 5px 7px;
+        width: 125px;
+        border-radius: 5px !important;
+        text-align: center;
+        color: #1f0735 !important;
+        transition: all 1s;
+}
+#btn-logOut:hover{
+    background-color: #7f6399 !important;
+    color: #ddd !important; 
+}
+@media screen and (max-width:500px) {
+    #btn-logOut{
+        margin-top: 15px !important;
+        padding: 10px 20px;
+    }
+    .btn-nav-Weather ,.btn-nav-Home{
+        position: static;
+        margin-top: 5px;
+        padding: 3px;
+        font-size: 22px !important;
+    }
+    .card{
+        margin-top: 105px !important;
+    }
+    .weather-icon{
+        width:170px;
+        margin-top: 20px;
+    }
+    .weather h1{
+        font-size:25px;
+        font-weight:400;
+        margin-top:-10px;
+    }
+    .details{
+        margin-top:30px;
+        padding:0 20px;
+    }
+    .search input ,button{
+       padding: 10px 15px;
+    }
+    .search input{
+        width: 76%;
+    }
+    .input-content{
+        width:95%;
+        height:450px;
+    }
+    .btn-nav-My-Could{
+        margin-top: 5px;
+        font-size: 25px;
+    }
+    .btn-nav-signIn ,.btn-nav-signUp{
+        position:static;
+        font-size: 22px;
+    }
+    .text-Error{
+        top: auto;
+        bottom:0;
+        left: 0;
+        display: none;
+    }
+    .input::placeholder{
+        font-size: 17px !important;
+    }
+     .navbar{
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        min-height: 80px !important;
+    }
+    .signIn-page ,.signUp-page{
+        position: relative;
+        top:140
+    }
+    .signUp-page{
+        top:100
+    }
+}
 @media screen and (min-width:500px) and (max-width:759px){
     .btn-nav-signIn ,.btn-nav-Weather{
         position:static;
@@ -273,20 +375,18 @@ p{
         height:450px;
 
     }
- .cloud
-  {   
+    .cloud{   
      font-size:10px; 
      color: #ddd;
      margin-top:-250px;  
-  }   
-
-  #main-moon ,#moon{
-    mix-blend-mode: screen;
-    width:90%;
-    height:100%;
-    top:20px;
-    left:25px;
-}
+   }   
+    #main-moon ,#moon{
+        mix-blend-mode: screen;
+        width:90%;
+        height:100%;
+        top:20px;
+        left:25px;
+    }
 }
 @media screen and (min-width:750px) and (max-width:1099px){
   .btn-nav-signIn ,.btn-nav-Weather{
@@ -296,55 +396,3 @@ p{
     width: 50%;
     height:450px;
 }}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

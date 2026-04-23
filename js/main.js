@@ -28,8 +28,7 @@ var My_Cloud=document.getElementById("My-Cloud");
 var main=document.querySelector(".main-home");
 var btnLogOut =document.getElementById("btn-logOut")
 
-window.onscroll=function()
-{
+window.onscroll=function(){
   let value =scrollY;
   stars1.style.left=value +"px";
   moon.style.top=value *4 +"px";
@@ -84,93 +83,94 @@ $("#phone").click(function(){
   $("#phone").css({"background":"#772d62d0"});
 })
 $(".btn-nav-signIn").click(function(){
-  $(".signIn").show();
-  $(".My-could").hide();
-  $(".signUp").hide();
-  $(".btn-nav-signUp").css({"font-weight":"500"})
-  $(".btn-nav-signIn").css({"font-weight":"900"})
+  $(".signIn-page").show();
+  $(".My-could-page").hide();
+  $(".signUp-page").hide();
+  $(".btn-nav-signUp").css({"font-weight":"500"});
+  $(".btn-nav-signIn").css({"font-weight":"900"});
   clearSignUp();
 })
 $(".btn-nav-signUp").click(function(){
-  $(".signIn").hide();
-  $(".My-could").hide();
-  $(".signUp").show();
-  $(".btn-nav-signUp").css({"font-weight":"900"})
-  $(".btn-nav-signIn").css({"font-weight":"500"})
+  $(".signIn-page").hide();
+  $(".My-could-page").hide();
+  $(".signUp-page").show();
+  $(".btn-nav-signUp").css({"font-weight":"900"});
+  $(".btn-nav-signIn").css({"font-weight":"500"});
   clearSignUp();
 })
 
 $(".btn-nav-My-Could").click(function(){
-  $(".signIn").hide();
-  $(".My-could").show();
-  $(".signUp").hide();
-  $(".btn-nav-signUp").css({"font-weight":"500"})
-  $(".btn-nav-signIn").css({"font-weight":"500"})
+  $(".signIn-page").hide();
+  $(".My-could-page").show();
+  $(".signUp-page").hide();
+  $(".btn-nav-signUp").css({"font-weight":"500"});
+  $(".btn-nav-signIn").css({"font-weight":"500"});
 })
 $(".btn-Register").click(function(){
-  $(".signIn").hide();
-  $(".My-could").hide();
-  $(".signUp").show();
-  $(".btn-nav-signUp").css({"font-weight":"900"})
-  $(".btn-nav-signIn").css({"font-weight":"500"})
+  $(".signIn-page").hide();
+  $(".My-could-page").hide();
+  $(".signUp-page").show();
+  $(".btn-nav-signUp").css({"font-weight":"900"});
+  $(".btn-nav-signIn").css({"font-weight":"500"});
 })
 $(".btn-nav-Home").click(function(){
-  $(".signIn").hide();
-  $(".My-could").hide();
+  $(".signIn-page").hide();
+  $(".My-could-page").hide();
   $("card").hide()
-  $(".signUp").hide();
-  $(".home").show();
-  $('.weathers').hide();
-  $(".btn-nav-Home").css({"font-weight":"900"})
-  $(".btn-nav-Weather").css({"font-weight":"100"})
+  $(".signUp-page").hide();
+  $(".home-page").show();
+  $('.weather-page').hide();
+  $(".btn-nav-Home").css({"font-weight":"900"});
+  $(".btn-nav-Weather").css({"font-weight":"100"});
 })
 $(".btn-nav-Weather").click(function(){
-  $(".signIn").hide();
-  $(".My-could").hide();
-  $(".signUp").hide();
-  $(".home").hide();
-  $('.weathers').show();
-  $(".btn-nav-Home").css({"font-weight":"100"})
-  $(".btn-nav-Weather").css({"font-weight":"900"})
+  $(".signIn-page").hide();
+  $(".My-could-page").hide();
+  $(".signUp-page").hide();
+  $(".home-page").hide();
+  $('.weather-page').show();
+  $(".btn-nav-Home").css({"font-weight":"100"});
+  $(".btn-nav-Weather").css({"font-weight":"900"});
 })
 $('.slide').hiSlide();
 $('#mySlide').hiSlide({
   interval: 3000,
   speed: 500 })
 
-var token = JSON.parse(localStorage.getItem("success"))
-var character = JSON.parse(localStorage.getItem("email"))
+var token = JSON.parse(localStorage.getItem("success"));
+var character = JSON.parse(localStorage.getItem("email"));
 
 if((token!==null)){  
-    $(".signIn").hide();
-    $(".My-could").hide();
-    $(".signUp").hide();
+    $(".signIn-page").hide();
+    $(".My-could-page").hide();
+    $(".signUp-page").hide();
     $(".nav-one").hide();
-    $(".home").show();
+    $(".home-page").show();
     $(".nav-Two").show();
-    $(".weathers").hide();
+    $(".weather-page").hide();
     $(".btn-nav-Home").css({"font-weight":"900"})
     $(".btn-nav-Weather").css({"font-weight":"100"})
  if(character!==null){
    btnText.innerHTML= character
 }else btnText.innerHTML= character?.data.user.email.charAt(0)
 }
-
 else{
 $(".nav-Two").hide();
-$(".signIn").hide();
-$(".signUp").hide();
-$(".home").hide();
-$('.weathers').hide();
+$(".signIn-page").hide();
+$(".signUp-page").hide();
+$(".home-page").hide();
+$('.weather-page').hide();
+$(".My-could-page").show()
+$(".nav-one").show();
 };
 
 btnLogOut.addEventListener( "click" , function(){
 localStorage.removeItem("success")
-  $(".signIn").hide();
-  $(".My-could").show();
-  $(".signUp").hide();
+  $(".signIn-page").hide();
+  $(".My-could-page").show();
+  $(".signUp-page").hide();
   $(".nav-Two").hide();   
-  $(".home").hide();
+  $(".home-page").hide();
   $(".nav-one").show();
   $(".btn-nav-signUp").css({"font-weight":"500"})
   $(".btn-nav-signIn").css({"font-weight":"500"})
@@ -184,8 +184,7 @@ function clearSignUp(){
    inputs[i].style.background = "#2a0828"
   }
  }
- async function checkSignUp()
-{
+ async function checkSignUp(){
   product={
     name:first_name.value,
     email:emailSignUp.value,
@@ -197,29 +196,26 @@ function clearSignUp(){
 try {
 $("#btn-signUp").attr("disabled" , true)
 let response = await axios.post("https://ecommerce.routemisr.com/api/v1/auth/signup", product);
+
 $("#btn-signUp").attr("disabled" , false)
 if(response.data.message=="success"){
-  $(".signIn").show();
-  $(".My-could").hide();
-  $(".signUp").hide();
+  $(".signIn-page").show();
+  $(".My-could-page").hide();
+  $(".signUp-page").hide();
   $(".text-Error").hide();
 }
 } catch (error){
   $("#btn-signUp").attr("disabled" , false)
   $(".text-Error").show();
-  textError.innerHTML= error?.response?.data.errors.msg ;
+  
+  textError.innerHTML= error?.response ? error?.response?.data.errors.msg :'Something went wrong, try again later!'
   $(".text-Error").fadeOut(5000);
 } 
 }
 
 btnSignUp.addEventListener("click",checkSignUp)
+
 async function checkLogin(){
- if(email.value ==='' || password.value ===""){
-    $("#text-Error").show();
-    textError.innerHTML="error in password Make sure you enter all valid data";
-    $("#text-Error").fadeOut(5000);
-} 
-else{  
   product={
   email:email.value,
   password:password.value,
@@ -230,15 +226,17 @@ else{
   let response = await axios.post("https://ecommerce.routemisr.com/api/v1/auth/signin" , product);
   $("#btn-logIn").attr("disabled" , false)
 
+  console.log(response);
+
   if(response.data.message==="success"){
     localStorage.setItem("success" , JSON.stringify(response.data.token))
     localStorage.setItem("email" , JSON.stringify(email.value.charAt(0)))
 
-    $(".signIn").hide();
-    $(".My-could").hide();
-    $(".signUp").hide();
+    $(".signIn-page").hide();
+    $(".My-could-page").hide();
+    $(".signUp-page").hide();
     $(".nav-one").hide();
-    $(".home").show();
+    $(".home-page").show();
     $(".nav-Two").show();   
     $(".card").hide();  
     btnText.innerHTML = email.value.charAt(0);
@@ -247,11 +245,10 @@ else{
 } catch (error){  
    $("#btn-logIn").attr("disabled" , false)
    $(".text-Error").show();  
-   text.innerHTML= error?.response.data.message;
+     textError.innerHTML= error?.response ? error?.response?.data.errors.msg :'Something went wrong, try again later!'
    $(".text-Error").fadeOut(5000);
 }
  }
-}
 
 btnLogIn.addEventListener("click",checkLogin)
 
@@ -279,6 +276,7 @@ else {
   humidity.innerHTML=data.main.humidity +"%";
   temp.innerHTML=Math.round(data.main.temp)+"C";
   wind.innerHTML=data.wind.speed + "km/h";
+console.log(data.weather[0].main);
 
   if(data.weather[0].main=='Clouds'){    
     weatherIcon.src="images/clouds.png";
@@ -299,6 +297,10 @@ else {
   else if(data.weather[0].main=="Snow"){
     weatherIcon.src="images/snow.png";
     weatherIcon.alt="snow";
+  }
+  else if ( data.weather[0].main== "Clear"){
+     weatherIcon.src="images/clear.png";
+    weatherIcon.alt="clear";
   }
 }
 }

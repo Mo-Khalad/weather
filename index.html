@@ -39,9 +39,7 @@
             </li>
 
           </ul>
-
-            
-          </div>
+      </div>
        
     </nav>
     <nav class="navbar nav-Two navbar-expand-lg bg-body-tertiary">
@@ -61,23 +59,23 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link active btn-nav-Home"
+                class="nav-link active btn-nav-Home smooth"
                 aria-current="page"
-                href="#"
+                href="#home-page"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active btn-nav-Weather"
+                class="nav-link active btn-nav-Weather smooth"
                 aria-current="page"
-                href="#"
+                href="#weather-page"
                 >Weather</a
               >
             </li>
           </ul>
           <ui class="navbar-nav p-1">
-            <li id="btn-text" class="nav-item  me-4"></li>
+            <li id="user-character" class="nav-item  me-4"></li>
             <a id="btn-logOut" class="fs-6">logOut</a>
           </ui>
         </div>
@@ -173,8 +171,8 @@
         src="images/mountains7.webp"
         alt="mountains"
       />
-      <div class="input-content m-auto">
-        <img class="images" id="stars1" src="images/stars1.webp" alt="stars" />
+      <div class="content-sign-page m-auto">
+       <img class="images" id="stars1" src="images/stars1.webp" alt="stars" />
         <img
           class="images"
           id="mountains3"
@@ -194,6 +192,7 @@
           src="images/mountains7.webp"
           alt="mountains"
         />
+      
         <h3 class="login-text">LogIn</h3>
         <input
           id="email"
@@ -237,7 +236,7 @@
         alt="mountains"
       />
 
-      <div class="input-content m-auto">
+      <div class="content-sign-page m-auto">
         <img
           class="input-images"
           id="stars1"
@@ -274,21 +273,21 @@
           class="inputs"
           type="text"
           name="name-Name"
-          placeholder="please enter your name"
+          placeholder="name"
         />
         <input
           id="phone"
           class="inputs"
           type="text"
           name="phone"
-          placeholder="please enter your phone"
+          placeholder="phone"
         />
         <input
           id="email-signUp"
           class="inputs"
           type="email"
           name="email"
-          placeholder="Enter Your email"
+          placeholder="email"
         />
         <input
           id="password-signUp"
@@ -308,7 +307,7 @@
       </div>
     </div>
 
-    <div class="home-page">
+    <div id="home-page" class="home-page">
       <div
         class="w-100 h-100 main main-home d-flex justify-content-center align-items-center"
       >
@@ -351,282 +350,60 @@
           alt="mountains"
         />
       </div>
-      ِ
+      
+  </div>
 
-      <div class="slide hi-slide">
-        <div class="hi-prev"></div>
-        <div class="hi-next"></div>
-        <ul class="m-auto my-5 w-75">
-          <li><img src="images/Thunder.webp" alt="Thunder" /></li>
-          <li><img src="images/spring.jpeg" alt="spring" /></li>
-          <li><img src="images/winter.jpeg" alt="weather" /></li>
-          <li><img src="images/autumn.webp" alt="autumn" /></li>
-          <li><img src="images/summer.webp" alt="summer" /></li>
-        </ul>
-      </div>
-
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-12 col-md-6 text mt-5">
-            <h2>Thunder</h2>
-            <p>
-              (Plural: thunder) is the sound produced alongside lightning. The
-              sound of thunder varies from a direct crack to a low rumble, and
-              its intensity depends on the listener's distance from the source.
-              The sound of thunder is also called a rumble.
-            </p>
-            <h2>Cause of Thunder</h2>
-            <p>
-              Thunder occurs physically as a result of a sudden increase in
-              pressure and temperature in the surrounding air caused by
-              lightning. This expansion, in turn, creates shock waves that
-              manifest as the sound of thunder.
-            </p>
-            <h2>Other names</h2>
-            <p>
-              Ar-Ra'd is the name of a surah in the Quran, and it is the
-              thirteenth surah in order. It has forty-three verses, and it is a
-              Medinan surah. Thunder is mentioned in verse 13 of Surah Ar-Ra'd,
-              which is located in the thirteenth part of the Quran.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <img
-              class="Thunder mt-5"
-              src="images/Thunder.webp"
-              width="100%"
-              alt="Thunder"
+    <div id="weather-page" class="weather-page">
+      <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+        <div class="card my-5">
+          <div id="search" class="search w-100 text-center mt-1">
+            <input
+              class="text-center"
+              id="search-input"
+              type="text"
+              name="search"
+              placeholder="enter city name"
             />
+            <button id="btn-Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <p class="error-Weather">Enter The City Name</p>
           </div>
-        </div>
-      </div>
-
-      <div class="container mt-5">
-        <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-md-6">
-            <img
-              class="Thunder mt-5"
-              src="images/spring.jpeg"
-              width="100%"
-              alt="spring"
-            />
-          </div>
-
-          <div class="col-md-6 text mt-5" dir="ltr">
-            <h2>Spring</h2>
-            <p>
-              Spring is one of the four seasons of the year and is characterized
-              by greenery, the growth and blooming of colorful flowers, and mild
-              weather or temperatures compared to winter. Temperatures are also
-              slightly lower compared to summer. Many tourist activities can be
-              done during spring, which some describe as a season for connecting
-              with nature and enjoying its natural beauty.
-            </p>
-            <h2>Springtime</h2>
-            <p>
-              Astronomically, spring begins on March 21st in the Northern
-              Hemisphere and on September 22nd in the Southern Hemisphere. It
-              continues until summer solstice, which begins on June 22nd in the
-              Northern Hemisphere and on December 22nd in the Southern
-              Hemisphere.
-            </p>
-            <h2>Benefits of Spring</h2>
-            <p>
-              Spring is considered a transitional phase between winter and
-              summer, leading to climatic balance and improved conditions for
-              the Earth.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-6 text mt-5">
-            <h2>Winter</h2>
-            <p>
-              Spring and winter is the winter season, the spring and winter
-              season, and it separates the two seasons and spring. It was named
-              the season (in English: Winter) after a Germanic word meaning the
-              time of water, which refers to the rain and snow that falls in
-              this season in the regions located in the middle and upper
-              latitudes of the globe.
-            </p>
-            <h2>Cause of its occurrence</h2>
-            <p>
-              A season occurs due to the Earth's axial tilt of 23.5 degrees as
-              it revolves around the sun. The first day of winter is the day of
-              the year. This season extends in the Northern Hemisphere from
-              December 21st or 22nd to March 20th or 21st, the time of the mild
-              winter. Similarly, in the Northern Hemisphere, a season extends
-              from June 21st or 22nd to September 22nd or 23rd.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <img
-              class="Thunder mt-5"
-              src="images/winter.jpeg"
-              width="100%"
-              alt="winter"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="container mt-5">
-        <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-md-6 h-50">
-            <img
-              class="Thunder"
-              src="images/autumn.webp"
-              width="100%"
-              height="600"
-              alt="autumn"
-            />
-          </div>
-
-          <div class="col-md-6 text mt-5">
-            <h2>Autumn</h2>
-            <p>
-              Autumn is one of the four seasons of the year and comes after
-              summer and is followed by winter. In the cold polar regions,
-              autumn is very short, and temperatures begin to gradually decrease
-              until they reach the middle between the heat of summer and the
-              cold of winter. Autumn is characterized by the falling of leaves
-              from the trees.
-            </p>
-            <h2>Characteristics of Autumn</h2>
-            <p>
-              <br class="text-light" />
-              - The leaves change color from green to yellow, red, orange, or
-              brown. This is the final stage before all the leaves fall from the
-              tree.<br />
-              <br />
-              - The length of day and night are equal, after which the days
-              gradually shorten and the nights gradually lengthen.<br />
-              <br />
-              - Autumn has a changeable weather pattern, combining elements of
-              the other three seasons into one. The weather is generally mild,
-              but may be punctuated by heat waves and cool winds, especially
-              during the night and early morning.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="container mt-5 pb-5">
-        <div class="row">
-          <div class="col-md-6 text mt-5">
-            <h2>Information about summer:</h2>
-            <p class="p-2">
-              - The word "summer" is derived from the English word "summer,"
-              which itself has Indo-European origins.<br />
-              <br />
-              - Ancient pagans believed that lighting fires during summer
-              festivals increased the sun's power, thus stimulating crop
-              growth.<br />
-              <br />
-              - Ancient civilizations, such as the Romans, Greeks, and Chinese,
-              celebrated the arrival of summer with their gods.<br />
-              <br />
-              The Sioux people celebrated summer with vibrantly colored dances
-              representing the universe: red symbolizing sunset, blue the sky,
-              yellow light, and black night.<br />
-            </p>
-            <h2>The date of summer</h2>
-            <p>
-              Summer begins in the last third of June and lasts for three
-              months, ending in the last third of September. The weather in
-              summer is characterized by high temperatures, dryness, and cold
-              storms. Summer is considered the season of celebrations and the
-              favorite season for most peoples since ancient times until now.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <img
-              class="Thunder mt-4"
-              src="images/summer.webp"
-              width="100%"
-              height="500px"
-              alt="summer"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="w-100 h-100 main justify-content-center align-items-center weather-page"
-    >
-      <img class="images" id="stars1" src="images/stars1.webp" alt="stars" />
-      <img
-        class="images"
-        id="mountains3"
-        src="images/mountains3.webp"
-        alt="mountains"
-      />
-      <img
-        class="images"
-        id="mountains4"
-        src="images/mountains4.webp"
-        alt="mountains"
-      />
-      <img class="images" id="river5" src="images/river5.webp" alt="river" />
-      <img
-        class="images"
-        id="mountains7"
-        src="images/mountains7.webp"
-        alt="mountains"
-      />
-
-      <div class="card">
-        <div id="search" class="search w-100 text-center mt-1">
-          <input
-            class="text-center"
-            id="input-Search"
-            type="text"
-            name="search"
-            placeholder="enter city name"
-          />
-          <button id="btn-Search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <p class="error-Weather">Enter The City Name</p>
-        </div>
-        <div class="weather text-center">
-          <img id="weatherIcon" class="weather-icon" src="" alt="" />
-          <h1 id="temp" class="temp mt-1"></h1>
-          <h2 id="city" class="city"></h2>
-          <div class="details d-flex align-items-center justify-content-between">
-            <div class="humidity-content d-flex">
-              <img
-                class="img-humidity px-2"
-                src="images/humidity.png"
-                width="50px"
-                alt="humidity"
-              />
-              <div class="humidity">
-                <p id="humidity"></p>
-                <p>humidity</p>
+          <div class="weather text-center">
+            <img id="weatherIcon" class="weather-icon" src="" alt="" />
+            <h1 id="temp" class="temp mt-1"></h1>
+            <h2 id="city" class="city"></h2>
+            <div class="details d-flex align-items-center justify-content-between">
+              <div class="humidity-content d-flex">
+                <img
+                  class="img-humidity px-2"
+                  src="images/humidity.png"
+                  width="50px"
+                  alt="humidity"
+                />
+                <div class="humidity">
+                  <p id="humidity"></p>
+                  <p>humidity</p>
+                </div>
               </div>
-            </div>
-
-            <div class="wind-content d-flex">
-              <img
-                class="img-wind px-2"
-                src="images/wind.png"
-                width="50px"
-                alt="wind"
-              />
-              <div class="wind">
-                <p id="wind"></p>
-
-                <p>Wind Speed</p>
+  
+              <div class="wind-content d-flex">
+                <img
+                  class="img-wind px-2"
+                  src="images/wind.png"
+                  width="50px"
+                  alt="wind"
+                />
+                <div class="wind">
+                  <p id="wind"></p>  
+                  <p>Wind Speed</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+</div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

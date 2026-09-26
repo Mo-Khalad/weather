@@ -321,8 +321,8 @@ input::placeholder ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password
     font-size: 22px;
 }
 #btn-logOut{
-    margin-top: 15px !important;
-    padding: 10px 20px;
+    margin-top: 5px !important;
+    padding: 8px 17px;
 }
 
 /* Authentication */
@@ -369,6 +369,7 @@ input::placeholder ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password
 }
 }
 @media screen and (min-width:500px) and (max-width:759px){
+/* Navbar */    
 .btn-nav-signIn ,.btn-nav-Weather{
     position:static;
 }   
@@ -376,6 +377,9 @@ input::placeholder ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password
     width:70%;
     height:450px;
 
+}
+#user-character{
+   margin-bottom: 10px;
 }
 
 /* Animation Images */
@@ -392,9 +396,12 @@ input::placeholder ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password
     left:25px;
 }
 }
-@media screen and (min-width:750px) and (max-width:1099px){
+@media screen and (min-width:750px) and (max-width:999px){
 .btn-nav-signIn ,.btn-nav-Weather{
     position:static;
+}
+#user-character{
+    margin-bottom: 10px;
 }   
 .content-sign-page{
     width: 50%;

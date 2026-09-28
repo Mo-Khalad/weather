@@ -2,7 +2,7 @@
 var userCharacter=document.getElementById("user-character");
 var main=document.querySelector(".main-home");
 var btnLogOut=document.getElementById("btn-logOut");
-
+var navbarCollapse=document.querySelectorAll(".collapse");
 /* Authentication */
 var inputs=document.getElementsByClassName("inputs");
 var email=document.getElementById("email");
@@ -147,6 +147,10 @@ function displayPage(showPage , hidePage1 , hidePage2 , buttonFocus , buttonNorm
   $(`.${hidePage2}`).hide();
   $(`.${buttonFocus}`).css({"font-weight":"900"});
   $(`.${buttonNormal}`).css({"font-weight":"500"});
+ 
+  for (let i = 0; i < navbarCollapse.length; i++) {
+    navbarCollapse[i].classList.remove("show")
+  }
   clearFields();
 }
 
@@ -194,40 +198,49 @@ $(".btn-nav-My-Could").click( function(){
 
 // Display Home Page
 $(".btn-nav-Home").click(function(){
+  for (let i = 0; i < navbarCollapse.length; i++) {
+    navbarCollapse[i].classList.remove("show")
+  }
   $(".btn-nav-Home").css({"font-weight":"900"});
   $(".btn-nav-Weather").css({"font-weight":"100"});
 })
 
 // Display Weather Page
 $(".btn-nav-Weather").click(function(){
+  for (let i = 0; i < navbarCollapse.length; i++) {
+    navbarCollapse[i].classList.remove("show")
+  }
   $(".btn-nav-Home").css({"font-weight":"100"});
   $(".btn-nav-Weather").css({"font-weight":"900"});  
 })
 
 // LogOut Function
 btnLogOut.addEventListener( "click" , function(){
-localStorage.removeItem("success")
-  $(".signIn-page").hide();
-  $(".My-could-page").show();
-  $(".signUp-page").hide();
-  $(".nav-Two").hide();   
-  $(".home-page").hide();
-  $('.weather-page').hide();
-  $(".nav-one").show();
-  $(".btn-nav-signUp").css({"font-weight":"500"})
-  $(".btn-nav-signIn").css({"font-weight":"500"})
-  $(".card").hide()
-})
+  for (let i = 0; i < navbarCollapse.length; i++) {
+    navbarCollapse[i].classList.remove("show")
+  }
+  localStorage.removeItem("success")
+    $(".signIn-page").hide();
+    $(".My-could-page").show();
+    $(".signUp-page").hide();
+    $(".nav-Two").hide();   
+    $(".home-page").hide();
+    $('.weather-page').hide();
+    $(".nav-one").show();
+    $(".btn-nav-signUp").css({"font-weight":"500"})
+    $(".btn-nav-signIn").css({"font-weight":"500"})
+    $(".card").hide()
+  })
 
 // Sign Up Function 
 async function checkSignUp(){
-  product={
-    name:first_name.value,
-    email:emailSignUp.value,
-    password:passwordSignUp.value,
-    rePassword:rePassword.value,
-    phone:phone.value,
-  }
+product={
+  name:first_name.value,
+  email:emailSignUp.value,
+  password:passwordSignUp.value,
+  rePassword:rePassword.value,
+  phone:phone.value,
+}
 
 try {
 $("#btn-signUp").attr("disabled" , true)
@@ -244,9 +257,12 @@ if(response.data.message=="success"){
 } catch (error){
   $("#btn-signUp").attr("disabled" , false)
   $(".text-Error").show();
-  
-  textError.innerHTML= error?.response ? error?.response?.data.errors.msg :'Something went wrong, try again later!'
-  $(".text-Error").fadeOut(5000);
+
+  textError.innerHTML= error?.response ?
+  error?.response?.data?.message =="fail" 
+  ? error?.response?.data?.errors?.msg : error?.response?.data?.message 
+  : "Something went wrong, try again later!" 
+  $(".text-Error").fadeOut(2000);
 } 
 }
 btnSignUp.addEventListener("click",checkSignUp)
@@ -283,10 +299,14 @@ async function checkLogin(){
   } 
 } catch (error){  
    $("#btn-logIn").attr("disabled" , false)
-   $(".text-Error").show();  
-     textError.innerHTML= error?.response ? error?.response?.data.errors.msg :'Something went wrong, try again later!'
-   $(".text-Error").fadeOut(5000);
-}
+   $(".text-Error").show();
+
+   textError.innerHTML= error?.response ?
+   error?.response?.data?.message =="fail" 
+   ? error?.response?.data?.errors?.msg : error?.response?.data?.message 
+   : "Something went wrong, try again later!" 
+   $(".text-Error").fadeOut(2000);
+ }
 }
 btnLogIn.addEventListener("click",checkLogin)
 
@@ -315,7 +335,6 @@ else {
   humidity.innerHTML=data.main.humidity +"%";
   temp.innerHTML=Math.round(data.main.temp)+"C";
   wind.innerHTML=data.wind.speed + "km/h";
-console.log(data.weather[0].main);
 
   if(data.weather[0].main=='Clouds'){    
     weatherIcon.src="images/clouds.png";
@@ -338,7 +357,7 @@ console.log(data.weather[0].main);
     weatherIcon.alt="snow";
   }
   else if ( data.weather[0].main== "Clear"){
-     weatherIcon.src="images/clear.png";
+    weatherIcon.src="images/clear.png";
     weatherIcon.alt="clear";
   }
 }

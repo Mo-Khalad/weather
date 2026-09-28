@@ -64,6 +64,7 @@ p{
     display: none;
     position: fixed !important;
     width: 100% !important;
+    min-height: 60px;
 }
 #user-character{
     color:#200016;
@@ -200,7 +201,7 @@ input::placeholder ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password
     color: #ddd;
 }
 .text-Error{
-    width:400;
+    width: 30%;
     padding:20px;
     box-shadow:1px 1px 6px rgb(1, 7, 19);
     position:absolute;
@@ -280,17 +281,12 @@ input::placeholder ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password
     z-index: 99;
 }
 #main-moon ,#moon{
-    mix-blend-mode: screen;
-    width:75%;
-    height:100%;
-    left: 125px;
-}
-#main-moon ,#moon{
-    mix-blend-mode: screen;
-    width:90%;
-    height:100%;
-    top:50px;
-    left:75px;
+  width:90%;
+  height:100%;
+  top:50px;
+  left:75px;
+  mix-blend-mode: screen;
+  left: 125px;
 }
 .cloud{
  font-size:20px; 
@@ -298,13 +294,20 @@ input::placeholder ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password
  margin-top:-350px;  
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:569px){
+
+#main-moon ,#moon{
+    left: 30px;
+}    
+/* Navbar */    
 .navbar{
-    position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
-    min-height: 80px !important;
+    bottom: 0;
+}
+.navbar-toggler{
+    height: 50px !important;
 }
 .btn-nav-Weather ,.btn-nav-Home{
     position: static;
@@ -362,16 +365,22 @@ input::placeholder ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password
     padding:0 20px;
 }
 .text-Error{
-    top: auto;
-    bottom:0;
-    left: 0;
-    display: none;
+  width: 90%;
+  left: 5%;
 }
 }
-@media screen and (min-width:500px) and (max-width:759px){
-/* Navbar */    
+@media screen and (min-width:570px) and (max-width:759px){
+.text-Error{
+    width: 90%;
+    left: 5%;
+    top: 100%;
+}
+/* Navbar */
+.navbar-toggler{
+ height: 40px !important;
+}    
 .btn-nav-signIn ,.btn-nav-Weather{
-    position:static;
+   position:static;
 }   
 .content-sign-page{
     width:70%;
@@ -397,6 +406,9 @@ input::placeholder ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password
 }
 }
 @media screen and (min-width:750px) and (max-width:999px){
+.navbar-toggler{
+    height: 40px !important;
+}     
 .btn-nav-signIn ,.btn-nav-Weather{
     position:static;
 }
@@ -406,5 +418,10 @@ input::placeholder ,#email ,#name ,#phone ,#rePassword ,#email-signUp ,#password
 .content-sign-page{
     width: 50%;
     height:450px;
+}
+.text-Error{
+    width: 90%;
+    left: 5%;
+    top: 100%;
 }
 }
